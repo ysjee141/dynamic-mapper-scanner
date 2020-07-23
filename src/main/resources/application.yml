@@ -1,0 +1,37 @@
+
+spring:
+  h2:
+    console:
+      enabled: false  # H2 웹 콘솔을 사용하겠다는 의미
+
+datasource:
+  mappe-one:
+    jdbcUrl: jdbc:h2:file:d:/test_db;AUTO_SERVER=TRUE
+    username: test
+    password: test
+    driver-class-name: org.h2.Driver
+    max-active: 20
+    tomcat:
+      connection-properties: useUnicode=true;characterEncoding=utf-8;
+
+
+datasource2:
+  source:
+    - name: datasourceOne
+      data-source:
+        jdbcUrl: jdbc:h2:file:d:/test_db;AUTO_SERVER=TRUE
+        username: test
+        password: test
+        driverClassName: org.h2.Driver
+        maximumPoolSize: 20
+
+
+datasource3:
+  - name: datasourceOne
+    order: 1
+    data-source:
+      jdbcUrl: jdbc:h2:file:d:/test_db;AUTO_SERVER=TRUE
+      username: test
+      password: test
+      driverClassName: org.h2.Driver
+      maximumPoolSize: 20
