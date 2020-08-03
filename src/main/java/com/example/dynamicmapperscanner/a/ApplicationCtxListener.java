@@ -34,7 +34,7 @@ import java.sql.Timestamp;
 @Component
 public class ApplicationCtxListener {
 
-  @EventListener
+//  @EventListener
   public void onApplicationEvent(ContextRefreshedEvent event) {
 
     ApplicationContext context = event.getApplicationContext();

@@ -1,6 +1,7 @@
 package com.example.dynamicmapperscanner.b;
 
 import com.example.dynamicmapperscanner.a.MapperOne;
+import com.example.dynamicmapperscanner.a.MapperTwo;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -10,7 +11,7 @@ import java.util.List;
  *
  * @author JI YOONSEONG
  **/
-@MapperOne
+@MapperTwo
 public interface b {
 
   List<test> getNames();
