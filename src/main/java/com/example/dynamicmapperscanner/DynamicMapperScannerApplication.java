@@ -10,8 +10,8 @@ import org.springframework.context.annotation.Configuration;
 @EnableConfigurationProperties
 public class DynamicMapperScannerApplication {
 
-  public static void main(String[] args) {
-    SpringApplication.run(DynamicMapperScannerApplication.class, args);
-  }
+	public static void main(String[] args) {
+		SpringApplication.run(DynamicMapperScannerApplication.class, args);
+	}
 
 }

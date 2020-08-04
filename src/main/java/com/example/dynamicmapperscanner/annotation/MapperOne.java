@@ -1,4 +1,4 @@
-package com.example.dynamicmapperscanner.a;
+package com.example.dynamicmapperscanner.annotation;
 
 import org.springframework.stereotype.Component;
 
@@ -8,12 +8,12 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * MapperOne
+ * Mapper에 1번 Data Source 지정
  *
  * @author JI YOONSEONG
  **/
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
 @Component
-public @interface MapperTwo {
+public @interface MapperOne {
 }

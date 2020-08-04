@@ -1,7 +1,5 @@
-package com.example.dynamicmapperscanner.a;
+package com.example.dynamicmapperscanner.annotation;
 
-import com.example.dynamicmapperscanner.c.TestAnnotated;
-import org.springframework.context.annotation.Import;
 import org.springframework.stereotype.Component;
 
 import java.lang.annotation.ElementType;
@@ -10,13 +8,12 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * MapperOne
+ * Mapper에 2번 Data Source 지정
  *
  * @author JI YOONSEONG
  **/
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
-@Import(TestAnnotated.class)
 @Component
-public @interface MapperOne {
+public @interface MapperTwo {
 }

@@ -1,6 +1,9 @@
-package com.example.dynamicmapperscanner.b;
+package com.example.dynamicmapperscanner.data;
 
-public class test {
+/**
+ * Sample Value Object
+ */
+public class SampleVo {
 
 	private String name;
 	private int nameAge;
